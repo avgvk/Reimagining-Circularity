@@ -1,0 +1,85 @@
+--- /mnt/data/app.py	2026-11-13 13:40:37.446267716 +0000
++++ /mnt/data/D2N_integrated_prototype/app.py	2026-11-13 13:47:05.516846940 +0000
+@@ -11,6 +11,7 @@
+ from assessment import ROBOT_SYSTEM, assess_disassembly, improvement_suggestions
+ from llm_reasoner import reason_component_features, reason_relationships, reason_sequence, reason_assessment, reason_improvements
+ from viewer import make_figure
++from circularity.evaluator import render_assessment as render_circularity_assessment, render_results as render_circularity_results, render_recommendation_context
+ 
+ 
+ def _server_setting(name, default=None):
+@@ -27,7 +28,7 @@
+ 
+ st.set_page_config(page_title="EV Motor Disassembly Intelligence",page_icon="⚙️",layout="wide")
+ st.title("EV Motor Disassembly Intelligence Platform")
+-st.caption("STEP → visualization → component identification → assembly features → relationship matrix → sequence → circularity evaluation → robotic assessment → circularity/design improvements")
++st.caption("STEP → visualization → component identification → assembly features → relationship matrix → sequence → circularity assessment → results & diagnosis → robotic assessment → improvement suggestions → export/audit")
+ 
+ STATE={"project":None,"groups":None,"bodies":None,"features":None,"relationships":None,"sequence":None,"assessment":None,"suggestions":None,"circularity_evaluation":None}
+ for k,v in STATE.items():
+@@ -65,7 +66,7 @@
+ p=st.session_state.project; groups=st.session_state.groups.copy(); bodies=st.session_state.bodies
+ m1,m2,m3,m4=st.columns(4); m1.metric("Raw solids",len(bodies)); m2.metric("Component groups",len(groups)); m3.metric("Assembly scale",f"{p['assembly_scale']:.1f}"); m4.metric("Motor axis",", ".join(f"{x:.2f}" for x in p["motor_axis"]))
+ 
+-tabs=st.tabs(["1 · STEP visualization","2 · Components","3 · Disassembly features","4 · Relationship matrix","5 · Sequence","6 · Interactive sequence","7 · Circularity evaluation","8 · Robotic assessment","9 · Improvement suggestions","10 · Export"])
++tabs=st.tabs(["1 · STEP visualization","2 · Components","3 · Disassembly features","4 · Relationship matrix","5 · Sequence","6 · Interactive sequence","7 · Circularity Assessment","8 · Circularity Results & Diagnosis","9 · Robotic Assessment","10 · Improvement Suggestions","11 · Export & Audit"])
+ 
+ with tabs[0]:
+     st.subheader("Complete STEP assembly")
+@@ -248,29 +249,15 @@
+         if isinstance(row.llm_reason,str) and row.llm_reason: st.write("**LLM comparison:**",row.llm_reason)
+ 
+ with tabs[6]:
+-    st.subheader("EV Motor Circularity Evaluator — human-confirmed assessment")
+-    st.info("This is the original supplied v5 evaluator, embedded without changing its scoring formulas. Enter and confirm design data, critical conditions and caps. Missing CAD/BOM information must not be guessed.")
+-    st.caption("The evaluator maintains its own browser-side state. Use its **Export assessment** button to save the completed JSON, then import that JSON below to link it to this project.")
+-    from streamlit.components.v1 import html as embed_html
+-    from pathlib import Path as _Path
+-    _evaluator_html = (_Path(__file__).resolve().parent / "circularity_evaluator.html").read_text(encoding="utf-8")
+-    embed_html(_evaluator_html, height=950, scrolling=True)
+-    assessment_upload = st.file_uploader("Import circularity evaluator JSON (exported using the embedded evaluator)", type=["json"], key="circularity_json_upload")
+-    if assessment_upload is not None and st.button("Attach circularity evaluation to project"):
+-        try:
+-            payload = json.loads(assessment_upload.getvalue().decode("utf-8"))
+-            if not isinstance(payload,dict) or not isinstance(payload.get("values"),dict) or not isinstance(payload.get("crit"),dict):
+-                raise ValueError("This is not a valid evaluator snapshot (expected values and crit objects).")
+-            st.session_state.circularity_evaluation = payload
+-            st.success("Circularity evaluator snapshot attached to this project and included in export.")
+-        except Exception as exc:
+-            st.error(f"Cannot import assessment: {exc}")
+-    if st.session_state.get("circularity_evaluation"):
+-        snapshot=st.session_state.circularity_evaluation
+-        st.success(f"Saved evaluator inputs: {len(snapshot.get('values',{}))}; critical-condition categories: {len(snapshot.get('crit',{}))}.")
+-        st.download_button("Download attached circularity snapshot", json.dumps(snapshot,indent=2), "circularity_evaluation.json", "application/json")
++    render_circularity_assessment(
++        p, groups, st.session_state.features, st.session_state.relationships,
++        st.session_state.sequence, st.session_state.assessment
++    )
+ 
+ with tabs[7]:
++    render_circularity_results()
++
++with tabs[8]:
+     st.subheader("Robotic disassembly assessment")
+     st.write(f"Selected existing system: **{ROBOT_SYSTEM['name']}**")
+     c1,c2,c3,c4=st.columns(4); c1.metric("Payload",f"{ROBOT_SYSTEM['payload_kg']} kg"); c2.metric("Reach",f"{ROBOT_SYSTEM['reach_mm']} mm"); c3.metric("Repeatability",f"±{ROBOT_SYSTEM['repeatability_mm']} mm"); c4.metric("Typical robot power",f"{ROBOT_SYSTEM['typical_power_w']} W")
+@@ -298,8 +285,9 @@
+                     if isinstance(v,str) and v.strip(): out.at[i,"user_assessment"]=v.strip(); out.at[i,"final_assessment"]=v.strip()
+                 st.session_state.assessment=out; st.success("Assessment corrections applied.")
+ 
+-with tabs[8]:
++with tabs[9]:
+     st.subheader("Design-specific suggestions for reuse, remanufacturing, recycling, recovery, repairability and refurbishment")
++    render_recommendation_context()
+     st.info("Recommendations are generated only when an extracted feature, relationship, sequence step, robotic-assessment result, or file-specific data gap supports them. No evidence → no recommendation.")
+     if st.button("Generate design-specific recommendations",type="primary",disabled=st.session_state.assessment is None):
+         st.session_state.suggestions=improvement_suggestions(st.session_state.assessment,st.session_state.relationships,st.session_state.features)
+@@ -338,7 +326,7 @@
+                 out=sug.copy(); mask=out.recommendation_id==rid; out.loc[mask,"final_recommendation"]=row.llm_suggestion; st.session_state.suggestions=out; st.success("LLM recommendation accepted as final for this evidence record.")
+             st.caption("Every final recommendation remains traceable to its component/group, relationship IDs, feature IDs, measured evidence and sequence/assessment trigger.")
+ 
+-with tabs[9]:
++with tabs[10]:
+     st.subheader("Export audit trail")
+     datasets={"components":st.session_state.groups,"component_features":st.session_state.features,"relationships":st.session_state.relationships,"disassembly_sequence":st.session_state.sequence,"robotic_assessment":st.session_state.assessment,"improvement_suggestions":st.session_state.suggestions}
+     for name,df in datasets.items():

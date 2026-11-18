@@ -1,0 +1,1959 @@
+{
+  "critical": {
+    "Modular Architecture": [
+      [
+        "Major module cannot be removed without destructive operations",
+        "Critical",
+        "Module score = 0"
+      ],
+      [
+        "Removal of one module causes irreversible damage to another reusable module",
+        "Critical",
+        "Module score = 0"
+      ],
+      [
+        "No feasible removal path exists for a target module",
+        "Critical",
+        "Module score = 0"
+      ],
+      [
+        "Module is permanently encapsulated or bonded into surrounding structure",
+        "Critical",
+        "Module score = 0"
+      ],
+      [
+        "Failure-prone component is inseparable from long-life structural component",
+        "Critical",
+        "Overall MAS cap = 30"
+      ],
+      [
+        "Replacement of one module requires destruction of the main housing",
+        "Critical",
+        "Overall MAS cap = 20"
+      ],
+      [
+        "Power electronics and motor structure are permanently integrated such that one cannot be replaced independently",
+        "Critical",
+        "Overall MAS cap = 30"
+      ],
+      [
+        "Cooling circuit is structurally integrated such that module removal requires cutting or destructive separation",
+        "Critical",
+        "Overall MAS cap = 30"
+      ],
+      [
+        "Rotor removal requires dismantling most of the motor architecture",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Stator cannot be separated from housing without specialist/destructive intervention",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Bearing replacement requires removal of multiple unrelated major modules",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "One module performs too many unrelated critical functions, preventing independent replacement",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Serviceable components are buried behind long-life modules",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Module interfaces are unique and non-reusable across the architecture",
+        "Severe",
+        "Cap = 60"
+      ],
+      [
+        "Major module removal requires disconnecting unrelated electrical/cooling systems",
+        "Severe",
+        "Cap = 60"
+      ],
+      [
+        "Module boundaries do not align with maintenance or failure boundaries",
+        "Severe",
+        "Cap = 60"
+      ],
+      [
+        "Multiple module interfaces use inconsistent fastener types",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Wear components are replaceable but access depth is high",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Electronics are removable but require partial motor disassembly",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Module removal requires multiple product reorientations",
+        "Major",
+        "Cap = 75"
+      ],
+      [
+        "Common modules use different attachment interfaces without functional need",
+        "Major",
+        "Cap = 75"
+      ],
+      [
+        "Module replacement requires excessive tool changes",
+        "Major",
+        "Cap = 75"
+      ],
+      [
+        "No dedicated handling/gripping features exist for heavy modules",
+        "Major",
+        "Cap = 75"
+      ],
+      [
+        "Module interfaces are inaccessible to robotic tools",
+        "Major",
+        "Cap = 70"
+      ]
+    ],
+    "Fastener Removal": [
+      [
+        "Critical fastener cannot be accessed by any feasible tool path",
+        "Critical",
+        "Affected joint = 0"
+      ],
+      [
+        "Fastener must be drilled/cut/destroyed for removal",
+        "Critical",
+        "Affected joint = 0"
+      ],
+      [
+        "Fastener is permanently obstructed by non-removable geometry",
+        "Critical",
+        "Affected joint = 0"
+      ],
+      [
+        "Major module contains inaccessible fastener(s) preventing non-destructive removal",
+        "Severe",
+        "Overall cap = 50"
+      ],
+      [
+        "Removal requires destructive access to reach the fastener",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Specialist tool required for multiple critical fasteners",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Excessive tool changes are required",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Significant number of blind/non-visible fasteners",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Multiple fastener orientations make robotic removal difficult",
+        "Major",
+        "Cap = 75"
+      ]
+    ],
+    "Accessibility": [
+      [
+        "No feasible access path exists to a required disassembly feature",
+        "Critical",
+        "Target score = 0"
+      ],
+      [
+        "Access requires destructive removal of surrounding structure",
+        "Critical",
+        "Target score = 0"
+      ],
+      [
+        "Critical component is physically trapped with no extraction path",
+        "Critical",
+        "Overall cap 30 or fail"
+      ],
+      [
+        "Rotor access requires dismantling most of the motor",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Bearing cannot be reached without removing unrelated major modules",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Electrical isolation point inaccessible before housing opening",
+        "Severe / safety gate",
+        "Cap or separate fail"
+      ],
+      [
+        "Cooling connections inaccessible without major motor disassembly",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Multiple operations require specialist angled tooling",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Significant proportion of fasteners have restricted approach",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Multiple product reorientations required",
+        "Major",
+        "Cap = 75"
+      ]
+    ],
+    "Electrical Isolation": [
+      [
+        "HV cannot be isolated before internal access",
+        "Critical",
+        "EIS = 0"
+      ],
+      [
+        "No defined means of establishing safe electrical state",
+        "Critical",
+        "EIS = 0"
+      ],
+      [
+        "Disassembly requires exposure to an energised HV interface",
+        "Critical",
+        "EIS = 0"
+      ],
+      [
+        "Zero-voltage verification unavailable before deeper disassembly",
+        "Severe",
+        "Cap 50"
+      ],
+      [
+        "Significant HV connection cannot be independently isolated",
+        "Severe",
+        "Cap 50"
+      ],
+      [
+        "Isolation requires excessive/specialist disassembly",
+        "Major",
+        "Cap 70"
+      ],
+      [
+        "Some HV interfaces lack error-proofing",
+        "Major",
+        "Cap 70"
+      ],
+      [
+        "Identification/marking deficiencies",
+        "Minor",
+        "Normal weighted score"
+      ]
+    ],
+    "Rotor & Magnet Recovery": [
+      [
+        "Rotor cannot be removed without destructive damage",
+        "Critical",
+        "Rotor score = 0"
+      ],
+      [
+        "No feasible rotor extraction path exists",
+        "Critical",
+        "Rotor score = 0"
+      ],
+      [
+        "Magnets cannot be accessed without destroying rotor structure",
+        "Critical",
+        "Magnet recovery cap = 20"
+      ],
+      [
+        "Magnet removal inherently destroys/fragments magnets",
+        "Critical for reuse",
+        "Reuse score = 0"
+      ],
+      [
+        "Magnet material cannot be separated into a usable recovery stream",
+        "Critical for magnet recovery",
+        "Magnet recovery = 0"
+      ],
+      [
+        "Rotor removal requires dismantling most of motor",
+        "Severe",
+        "RMRS cap = 50"
+      ],
+      [
+        "Magnet removal requires irreversible adhesive/encapsulation removal",
+        "Severe",
+        "RMRS cap = 50"
+      ],
+      [
+        "Extraction process presents high magnet damage risk",
+        "Severe",
+        "RMRS cap = 50"
+      ],
+      [
+        "Magnet removal requires potentially damaging thermal process",
+        "Severe",
+        "RMRS cap = 50–60"
+      ],
+      [
+        "Specialist extraction tooling required",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "High number of operations before magnet access",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Magnets lack suitable gripping/extraction features",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Rotor requires multiple orientation changes",
+        "Major",
+        "Cap = 75"
+      ]
+    ],
+    "Bearing Replacement": [
+      [
+        "Bearing cannot be physically accessed",
+        "Critical",
+        "Score = 0"
+      ],
+      [
+        "Bearing requires destructive housing/component removal",
+        "Critical",
+        "Score = 0"
+      ],
+      [
+        "No feasible extraction path",
+        "Critical",
+        "Score = 0"
+      ],
+      [
+        "Bearing can only be removed by damaging reusable component",
+        "Critical",
+        "Score = 0"
+      ],
+      [
+        "Major module must be dismantled",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Permanent/semi-permanent joint must be removed",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Special extraction equipment required",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Significant tool clearance restriction",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Multiple upstream components required",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Minor access restriction",
+        "Minor",
+        "No cap; normal score"
+      ]
+    ],
+    "Cooling System Disassembly": [
+      [
+        "Cooling connection must be cut/destructively separated",
+        "Critical",
+        "Score = 0"
+      ],
+      [
+        "Separation causes uncontrolled coolant release creating unacceptable disassembly condition",
+        "Critical",
+        "Score = 0"
+      ],
+      [
+        "Cooling system cannot be isolated from product before removal",
+        "Critical",
+        "Score = 0"
+      ],
+      [
+        "Major motor module must be dismantled to disconnect cooling circuit",
+        "Severe",
+        "Cap 50"
+      ],
+      [
+        "Cooling jacket cannot be inspected without major disassembly",
+        "Severe",
+        "Cap 50"
+      ],
+      [
+        "Specialist tooling required for coolant connection",
+        "Major",
+        "Cap 70"
+      ],
+      [
+        "Sealant must be removed and reapplied at every disassembly",
+        "Major",
+        "Cap 70"
+      ],
+      [
+        "Minor leakage/access restriction",
+        "Minor",
+        "Normal score"
+      ]
+    ],
+    "Robotic Disassembly": [
+      [
+        "No feasible robotic path to a required operation",
+        "Critical",
+        "Affected operation = 0"
+      ],
+      [
+        "Component cannot be robotically grasped or controlled",
+        "Critical",
+        "Affected operation/component = 0"
+      ],
+      [
+        "Disassembly requires destructive manual intervention",
+        "Critical for fully robotic process",
+        "Overall cap = 30"
+      ],
+      [
+        "Component becomes uncontrolled immediately after release",
+        "Critical",
+        "Affected operation = 0"
+      ],
+      [
+        "Major part of sequence requires manual intervention",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Multiple inaccessible fasteners block robotic completion",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Robot must repeatedly reorient the full motor",
+        "Severe",
+        "Cap = 60"
+      ],
+      [
+        "Specialist robotic tooling required for several operations",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Machine vision cannot reliably identify several targets",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Multiple grasp changes required",
+        "Major",
+        "Cap = 70"
+      ]
+    ],
+    "Material Separation": [
+      [
+        "A high-value/critical material cannot be separated from the assembly at all",
+        "Critical",
+        "Affected material score = 0"
+      ],
+      [
+        "Separation requires destruction that mixes the target material into an unrecoverable stream",
+        "Critical",
+        "Overall MSS cap = 30"
+      ],
+      [
+        "Material cannot be identified sufficiently for an appropriate recovery route",
+        "Critical for that stream",
+        "Affected material score = 0"
+      ],
+      [
+        "A major material stream can only be recovered through shredding/mixed-material processing",
+        "Severe",
+        "MSS cap = 50"
+      ],
+      [
+        "Significant adhesive, resin, coating or encapsulation prevents clean material separation",
+        "Severe",
+        "MSS cap = 50"
+      ],
+      [
+        "Copper or magnet material cannot be separated without substantial contamination",
+        "Severe",
+        "MSS cap = 50"
+      ],
+      [
+        "Specialist/destructive tooling is required for several mixed-material joints",
+        "Major",
+        "MSS cap = 70"
+      ],
+      [
+        "Material identification is incomplete for a significant portion of the product",
+        "Major",
+        "MSS cap = 70"
+      ],
+      [
+        "Several mixed-material interfaces require additional cleaning or secondary separation",
+        "Major",
+        "MSS cap = 75"
+      ]
+    ],
+    "Inspection": [
+      [
+        "Critical component cannot be inspected at all",
+        "Critical",
+        "Affected component = 0"
+      ],
+      [
+        "Inspection requires destructive disassembly",
+        "Critical",
+        "Overall cap = 30"
+      ],
+      [
+        "Major reusable component cannot be inspected before remanufacturing decision",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Specialist equipment required for most critical inspections",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Inspection access is available only after major module removal",
+        "Major",
+        "Cap = 70"
+      ]
+    ],
+    "Traceability": [
+      [
+        "Critical/high-value component cannot be identified",
+        "Critical for that component",
+        "Component score = 0"
+      ],
+      [
+        "Magnet material/grade cannot be identified",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Major material stream cannot be identified",
+        "Severe",
+        "Cap = 50"
+      ],
+      [
+        "Significant number of components lack identification",
+        "Major",
+        "Cap = 70"
+      ],
+      [
+        "Material data missing for significant product mass",
+        "Major",
+        "Cap = 70"
+      ]
+    ]
+  },
+  "categories": [
+    {
+      "id": "modular",
+      "name": "Modular Architecture",
+      "weight": 0.1,
+      "evidence": "[22][25][35][36][37][38][41]",
+      "formula": "MA = 0.35M + 0.25W + 0.25E + 0.15S",
+      "note": "",
+      "qs": [
+        {
+          "k": "m_sum",
+          "c": "M",
+          "l": "Sum of module access-depth scores",
+          "t": "number",
+          "h": "For each module: 0 prior removals=100; 1=85; 2=70; 3=55; 4=40; 5+=20; destructive=0."
+        },
+        {
+          "k": "m_n",
+          "c": "M",
+          "l": "Number of modules assessed",
+          "t": "number",
+          "h": "Enter the number of modules included in the access-depth assessment."
+        },
+        {
+          "k": "w_ind",
+          "c": "W",
+          "l": "Wear/service components independently replaceable",
+          "t": "number",
+          "h": "Number of wear/service components that can be replaced independently."
+        },
+        {
+          "k": "w_tot",
+          "c": "W",
+          "l": "Total wear/service components assessed",
+          "t": "number",
+          "h": "Use the same assessment boundary as the numerator."
+        },
+        {
+          "k": "electronics",
+          "c": "E",
+          "l": "Electronics separation condition",
+          "t": "select",
+          "h": "Choose how independently the electronics can be removed.",
+          "o": [
+            {
+              "label": "Electronics form a separate removable module",
+              "score": 100
+            },
+            {
+              "label": "Removable after one cover/component",
+              "score": 80
+            },
+            {
+              "label": "Requires partial motor disassembly",
+              "score": 50
+            },
+            {
+              "label": "Integrated into housing requiring major disassembly",
+              "score": 20
+            },
+            {
+              "label": "Cannot be separated without destructive operations",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "s_std",
+          "c": "S",
+          "l": "Standardised module interfaces",
+          "t": "number",
+          "h": "Number of module interfaces that are standardised."
+        },
+        {
+          "k": "s_tot",
+          "c": "S",
+          "l": "Total module interfaces assessed",
+          "t": "number",
+          "h": "Use the same assessment boundary as the numerator."
+        }
+      ]
+    },
+    {
+      "id": "fastener",
+      "name": "Fastener Removal",
+      "weight": 0.11,
+      "evidence": "[16][17][22][36][38][39][40]",
+      "formula": "FR = 0.25A + 0.20R + 0.20S + 0.20T + 0.15D",
+      "qs": [
+        {
+          "k": "fa_acc",
+          "c": "A",
+          "l": "Accessible fasteners",
+          "t": "number",
+          "h": "Fasteners directly accessible with the intended tool."
+        },
+        {
+          "k": "fa_tot",
+          "c": "A",
+          "l": "Total fasteners in selected path",
+          "t": "number",
+          "h": "Total fasteners in the disassembly path being evaluated."
+        },
+        {
+          "k": "joint",
+          "c": "R",
+          "l": "Joint / connection type",
+          "t": "select",
+          "h": "Classify the relevant joint or dominant joint condition.",
+          "o": [
+            {
+              "label": "Standard bolt/screw",
+              "score": 100
+            },
+            {
+              "label": "Releasable clip/snap-fit",
+              "score": 90
+            },
+            {
+              "label": "Retaining ring",
+              "score": 85
+            },
+            {
+              "label": "Thread-lock requiring extra process",
+              "score": 70
+            },
+            {
+              "label": "Press/interference fit",
+              "score": 50
+            },
+            {
+              "label": "Rivet",
+              "score": 20
+            },
+            {
+              "label": "Adhesive/epoxy",
+              "score": 10
+            },
+            {
+              "label": "Weld/permanent deformation",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "dominant",
+          "c": "S",
+          "l": "Fasteners of most common family",
+          "t": "number",
+          "h": "Number belonging to the dominant fastener family."
+        },
+        {
+          "k": "std_tot",
+          "c": "S",
+          "l": "Total fasteners assessed for standardisation",
+          "t": "number",
+          "h": "Total used for the dominant-fastener ratio."
+        },
+        {
+          "k": "families",
+          "c": "S",
+          "l": "Number of fastener families",
+          "t": "select",
+          "h": "Existing banded rule.",
+          "o": [
+            {
+              "label": "1",
+              "score": 100
+            },
+            {
+              "label": "2",
+              "score": 90
+            },
+            {
+              "label": "3",
+              "score": 75
+            },
+            {
+              "label": "4",
+              "score": 60
+            },
+            {
+              "label": "5+",
+              "score": 40
+            }
+          ]
+        },
+        {
+          "k": "tools",
+          "c": "T",
+          "l": "Tooling requirement",
+          "t": "select",
+          "h": "Choose the tooling condition.",
+          "o": [
+            {
+              "label": "One standard tool",
+              "score": 100
+            },
+            {
+              "label": "Two standard tools",
+              "score": 85
+            },
+            {
+              "label": "Three tools",
+              "score": 70
+            },
+            {
+              "label": "4–5 tools",
+              "score": 50
+            },
+            {
+              "label": "Specialist tool required",
+              "score": 30
+            },
+            {
+              "label": "Destructive tooling required",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "req_fast",
+          "c": "D",
+          "l": "Functionally required / essential fasteners",
+          "t": "number",
+          "h": "Numerator of the fastener-burden ratio."
+        },
+        {
+          "k": "act_fast",
+          "c": "D",
+          "l": "Actual fasteners used",
+          "t": "number",
+          "h": "Denominator of the fastener-burden ratio."
+        }
+      ]
+    },
+    {
+      "id": "access",
+      "name": "Accessibility",
+      "weight": 0.12,
+      "evidence": "[16][17][18][36][39][40]",
+      "formula": "A = 0.25T + 0.20C + 0.20D + 0.20O + 0.15R",
+      "qs": [
+        {
+          "k": "tool_ops",
+          "c": "T",
+          "l": "Operations with feasible tool access",
+          "t": "number",
+          "h": "Number of required operations with feasible tool access."
+        },
+        {
+          "k": "req_ops",
+          "c": "T",
+          "l": "Total required operations",
+          "t": "number",
+          "h": "Total operations within the selected path."
+        },
+        {
+          "k": "clear_ratio",
+          "c": "C",
+          "l": "Clearance ratio (available / required)",
+          "t": "number",
+          "step": "0.01",
+          "h": "Example: 1.25 means available clearance is 125% of the tool/process requirement."
+        },
+        {
+          "k": "access_depth",
+          "c": "D",
+          "l": "Components removed before target access",
+          "t": "select",
+          "h": "Select the existing access-depth band.",
+          "o": [
+            {
+              "label": "0",
+              "score": 100
+            },
+            {
+              "label": "1",
+              "score": 85
+            },
+            {
+              "label": "2",
+              "score": 70
+            },
+            {
+              "label": "3",
+              "score": 55
+            },
+            {
+              "label": "4",
+              "score": 40
+            },
+            {
+              "label": "5+",
+              "score": 20
+            },
+            {
+              "label": "Destructive access required",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "unobs",
+          "c": "O",
+          "l": "Targets with unobstructed access path",
+          "t": "number",
+          "h": "Targets with a usable line of approach/removal."
+        },
+        {
+          "k": "targets",
+          "c": "O",
+          "l": "Total targets assessed",
+          "t": "number",
+          "h": "Use the same assessment boundary as the numerator."
+        },
+        {
+          "k": "reorient",
+          "c": "R",
+          "l": "Whole-product reorientations required",
+          "t": "select",
+          "h": "Existing banded rule.",
+          "o": [
+            {
+              "label": "0",
+              "score": 100
+            },
+            {
+              "label": "1",
+              "score": 85
+            },
+            {
+              "label": "2",
+              "score": 70
+            },
+            {
+              "label": "3",
+              "score": 50
+            },
+            {
+              "label": "4",
+              "score": 30
+            },
+            {
+              "label": "5+",
+              "score": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electrical",
+      "name": "Electrical Isolation",
+      "weight": 0.05,
+      "evidence": "EV-specific focused-review evidence gap",
+      "formula": "EI = 0.25D + 0.20A + 0.15I + 0.15P + 0.25V",
+      "qs": [
+        {
+          "k": "iso",
+          "c": "D",
+          "l": "HV connections isolatable before access",
+          "t": "number",
+          "h": "Count isolatable before internal access."
+        },
+        {
+          "k": "hv_tot",
+          "c": "D",
+          "l": "Total HV connections requiring isolation",
+          "t": "number",
+          "h": "Total HV connections within the assessment boundary."
+        },
+        {
+          "k": "auto_iso",
+          "c": "A",
+          "l": "Automatic / manual isolation condition",
+          "t": "select",
+          "h": "Choose the defined design condition.",
+          "o": [
+            {
+              "label": "Automatic isolation + interlock + safe state maintained",
+              "score": 100
+            },
+            {
+              "label": "Automatic isolation present but limited redundancy/coverage",
+              "score": 75
+            },
+            {
+              "label": "Manual isolation only",
+              "score": 50
+            },
+            {
+              "label": "Specialist intervention required",
+              "score": 25
+            },
+            {
+              "label": "No defined isolation mechanism",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "hv_id",
+          "c": "I",
+          "l": "Correctly identified HV components",
+          "t": "number",
+          "h": "Count of correctly identified HV components."
+        },
+        {
+          "k": "hv_comp",
+          "c": "I",
+          "l": "Total HV components assessed",
+          "t": "number",
+          "h": "Total relevant HV components."
+        },
+        {
+          "k": "errproof",
+          "c": "P",
+          "l": "Error-proofed connections",
+          "t": "number",
+          "h": "Connections designed to prevent incorrect reconnection."
+        },
+        {
+          "k": "misconn",
+          "c": "P",
+          "l": "Connections with potential misconnection risk",
+          "t": "number",
+          "h": "Use the same assessment boundary."
+        },
+        {
+          "k": "voltage_pts",
+          "c": "V",
+          "l": "Zero-voltage verification points (0–100)",
+          "t": "number",
+          "max": 100,
+          "h": "Existing points: test point 30 + accessible before exposure 25 + clear ID 15 + no major dismantling 15 + defined sequence 15."
+        }
+      ]
+    },
+    {
+      "id": "rotor",
+      "name": "Rotor & Magnet Recovery",
+      "weight": 0.15,
+      "evidence": "[18][19][20][21][25][26][27][28][29][31][32][34][36][39]",
+      "formula": "RMRS = 0.40R + 0.25M + 0.20J + 0.15H",
+      "qs": [
+        {
+          "k": "rotor_access",
+          "c": "R",
+          "l": "Components removed before rotor access",
+          "t": "select",
+          "h": "Select the existing rotor-access band.",
+          "o": [
+            {
+              "label": "0–1",
+              "score": 100
+            },
+            {
+              "label": "2",
+              "score": 85
+            },
+            {
+              "label": "3",
+              "score": 70
+            },
+            {
+              "label": "4",
+              "score": 55
+            },
+            {
+              "label": "5",
+              "score": 40
+            },
+            {
+              "label": ">5",
+              "score": 20
+            }
+          ]
+        },
+        {
+          "k": "rotor_destructive",
+          "c": "R",
+          "l": "Destructive rotor access/removal required?",
+          "t": "select",
+          "h": "If Yes, R is forced to 0.",
+          "o": [
+            {
+              "label": "No",
+              "score": 0
+            },
+            {
+              "label": "Yes",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "k": "mag_ops",
+          "c": "M",
+          "l": "Additional operations after rotor removal before magnet access",
+          "t": "select",
+          "h": "Select the existing magnet-access band.",
+          "o": [
+            {
+              "label": "0",
+              "score": 100
+            },
+            {
+              "label": "1",
+              "score": 85
+            },
+            {
+              "label": "2–3",
+              "score": 70
+            },
+            {
+              "label": "4–5",
+              "score": 50
+            },
+            {
+              "label": ">5",
+              "score": 30
+            }
+          ]
+        },
+        {
+          "k": "mag_destructive",
+          "c": "M",
+          "l": "Destructive magnet access required?",
+          "t": "select",
+          "h": "If Yes, M is forced to 0.",
+          "o": [
+            {
+              "label": "No",
+              "score": 0
+            },
+            {
+              "label": "Yes",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "k": "ni",
+          "c": "Ni",
+          "l": "Non-destructive removability",
+          "t": "select",
+          "h": "How can the magnet retention be released?",
+          "o": [
+            {
+              "label": "Fully reversible mechanical release",
+              "score": 100
+            },
+            {
+              "label": "Reversible with controlled specialist tool",
+              "score": 80
+            },
+            {
+              "label": "Reversible with moderate force/heat",
+              "score": 60
+            },
+            {
+              "label": "Partial destruction of retention feature required",
+              "score": 30
+            },
+            {
+              "label": "Magnet/rotor must be cut, ground or machined",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "pi",
+          "c": "Pi",
+          "l": "Low-damage separation likelihood",
+          "t": "select",
+          "h": "Expected magnet damage likelihood during separation.",
+          "o": [
+            {
+              "label": "Very low",
+              "score": 100
+            },
+            {
+              "label": "Low",
+              "score": 80
+            },
+            {
+              "label": "Moderate",
+              "score": 60
+            },
+            {
+              "label": "High",
+              "score": 30
+            },
+            {
+              "label": "Very high / unavoidable",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "ti",
+          "c": "Ti",
+          "l": "Release process / tooling simplicity",
+          "t": "select",
+          "h": "Choose the release-process condition.",
+          "o": [
+            {
+              "label": "One simple mechanical operation",
+              "score": 100
+            },
+            {
+              "label": "2–3 standard operations",
+              "score": 80
+            },
+            {
+              "label": "Specialist mechanical tool",
+              "score": 60
+            },
+            {
+              "label": "Thermal/chemical process",
+              "score": 40
+            },
+            {
+              "label": "Machining/cutting required",
+              "score": 20
+            }
+          ]
+        },
+        {
+          "k": "ui",
+          "c": "Ui",
+          "l": "Interface reusability",
+          "t": "select",
+          "h": "Expected post-separation reuse condition.",
+          "o": [
+            {
+              "label": "Magnet and retention feature fully reusable",
+              "score": 100
+            },
+            {
+              "label": "Magnet reusable, retention feature replaced",
+              "score": 80
+            },
+            {
+              "label": "Magnet reusable after cleaning/reconditioning",
+              "score": 60
+            },
+            {
+              "label": "Magnet only suitable for recycling",
+              "score": 30
+            },
+            {
+              "label": "Magnet unrecoverable",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "grasp",
+          "c": "G",
+          "l": "Grasping / handling condition",
+          "t": "select",
+          "h": "Available handling condition.",
+          "o": [
+            {
+              "label": "Dedicated gripping/handling feature",
+              "score": 100
+            },
+            {
+              "label": "Clear stable gripping surface",
+              "score": 80
+            },
+            {
+              "label": "Generic gripping possible",
+              "score": 60
+            },
+            {
+              "label": "Difficult or unstable handling",
+              "score": 30
+            },
+            {
+              "label": "No feasible handling method",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "trace_mag",
+          "c": "T",
+          "l": "Magnet traceability condition",
+          "t": "select",
+          "h": "Availability of grade/material/ID information.",
+          "o": [
+            {
+              "label": "Magnet grade/material and ID fully available",
+              "score": 100
+            },
+            {
+              "label": "Most key information available",
+              "score": 75
+            },
+            {
+              "label": "Basic material type only",
+              "score": 50
+            },
+            {
+              "label": "Very limited information",
+              "score": 25
+            },
+            {
+              "label": "No identification",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "seg",
+          "c": "S",
+          "l": "Segregation / recovery condition",
+          "t": "select",
+          "h": "Cleanliness/contamination of recovered magnet.",
+          "o": [
+            {
+              "label": "Clean magnet recovered individually",
+              "score": 100
+            },
+            {
+              "label": "Minor cleaning required",
+              "score": 80
+            },
+            {
+              "label": "Moderate adhesive/coating contamination",
+              "score": 60
+            },
+            {
+              "label": "Significant mixed-material contamination",
+              "score": 30
+            },
+            {
+              "label": "Only recoverable through shredding/mixed stream",
+              "score": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bearing",
+      "name": "Bearing Replacement",
+      "weight": 0.07,
+      "evidence": "[36][37][40]",
+      "formula": "Implemented: BRS = 0.30I + 0.30A + 0.20S + 0.20C",
+      "note": "Inherited written equation labels the first 0.30 term as T, while the model defines I = Independent Removal.",
+      "qs": [
+        {
+          "k": "bear_access",
+          "c": "I",
+          "l": "Components removed before bearing extraction",
+          "t": "select",
+          "h": "Existing access band.",
+          "o": [
+            {
+              "label": "0",
+              "score": 100
+            },
+            {
+              "label": "1",
+              "score": 80
+            },
+            {
+              "label": "2–3",
+              "score": 60
+            },
+            {
+              "label": "4–5",
+              "score": 40
+            },
+            {
+              "label": ">5",
+              "score": 20
+            }
+          ]
+        },
+        {
+          "k": "bear_destructive",
+          "c": "I",
+          "l": "Destructive bearing access/removal required?",
+          "t": "select",
+          "h": "If Yes, I is forced to 0.",
+          "o": [
+            {
+              "label": "No",
+              "score": 0
+            },
+            {
+              "label": "Yes",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "k": "extract_feature",
+          "c": "A",
+          "l": "Dedicated extraction feature present?",
+          "t": "select",
+          "h": "30 points if present.",
+          "o": [
+            {
+              "label": "Yes",
+              "score": 1
+            },
+            {
+              "label": "No",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "puller",
+          "c": "A",
+          "l": "Puller/tool access available?",
+          "t": "select",
+          "h": "25 points if present.",
+          "o": [
+            {
+              "label": "Yes",
+              "score": 1
+            },
+            {
+              "label": "No",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "robot_grasp",
+          "c": "A",
+          "l": "Robotic grasping surface available?",
+          "t": "select",
+          "h": "20 points if present.",
+          "o": [
+            {
+              "label": "Yes",
+              "score": 1
+            },
+            {
+              "label": "No",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "extract_dir",
+          "c": "A",
+          "l": "Clear extraction direction available?",
+          "t": "select",
+          "h": "15 points if present.",
+          "o": [
+            {
+              "label": "Yes",
+              "score": 1
+            },
+            {
+              "label": "No",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "no_obstruction",
+          "c": "A",
+          "l": "No obstruction to extraction path?",
+          "t": "select",
+          "h": "10 points if present.",
+          "o": [
+            {
+              "label": "Yes",
+              "score": 1
+            },
+            {
+              "label": "No",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "bearing_std",
+          "c": "S",
+          "l": "Bearing standardisation condition",
+          "t": "select",
+          "h": "Choose the existing condition.",
+          "o": [
+            {
+              "label": "Standard catalogue bearing",
+              "score": 100
+            },
+            {
+              "label": "Standard bearing with minor adaptation",
+              "score": 75
+            },
+            {
+              "label": "Custom bearing",
+              "score": 25
+            }
+          ]
+        },
+        {
+          "k": "bear_clear",
+          "c": "C",
+          "l": "Clearance ratio (available / required)",
+          "t": "number",
+          "step": "0.01",
+          "h": "Ratio for the intended extraction tool/process."
+        }
+      ]
+    },
+    {
+      "id": "cooling",
+      "name": "Cooling System Disassembly",
+      "weight": 0.07,
+      "evidence": "[36][37][40]",
+      "formula": "Implemented: CS = 0.30D + 0.30L + 0.20S + 0.20I",
+      "note": "Inherited written equation repeats L in the final term; this implementation uses I = Independent Inspection.",
+      "qs": [
+        {
+          "k": "cool_disc",
+          "c": "D",
+          "l": "Cooling disconnectability condition",
+          "t": "select",
+          "h": "Choose the existing condition.",
+          "o": [
+            {
+              "label": "Tool-free quick disconnect",
+              "score": 100
+            },
+            {
+              "label": "Single-tool reversible connector",
+              "score": 80
+            },
+            {
+              "label": "Multiple fasteners/tools",
+              "score": 60
+            },
+            {
+              "label": "Difficult access / specialist tool",
+              "score": 30
+            },
+            {
+              "label": "Pipe/hose must be cut",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "selfseal",
+          "c": "L",
+          "l": "Automatic/self-sealing isolation?",
+          "t": "select",
+          "h": "30 points if Yes.",
+          "o": [
+            {
+              "label": "Yes",
+              "score": 1
+            },
+            {
+              "label": "No",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "drain",
+          "c": "L",
+          "l": "Dedicated drain feature?",
+          "t": "select",
+          "h": "20 points if Yes.",
+          "o": [
+            {
+              "label": "Yes",
+              "score": 1
+            },
+            {
+              "label": "No",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "lowvol",
+          "c": "L",
+          "l": "Low residual coolant volume?",
+          "t": "select",
+          "h": "20 points if Yes.",
+          "o": [
+            {
+              "label": "Yes",
+              "score": 1
+            },
+            {
+              "label": "No",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "spill",
+          "c": "L",
+          "l": "Connector designed to minimise spill?",
+          "t": "select",
+          "h": "20 points if Yes.",
+          "o": [
+            {
+              "label": "Yes",
+              "score": 1
+            },
+            {
+              "label": "No",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "no_reorient",
+          "c": "L",
+          "l": "Separation without product reorientation?",
+          "t": "select",
+          "h": "10 points if Yes.",
+          "o": [
+            {
+              "label": "Yes",
+              "score": 1
+            },
+            {
+              "label": "No",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "seal",
+          "c": "S",
+          "l": "Seal reusability condition",
+          "t": "select",
+          "h": "Choose the existing condition.",
+          "o": [
+            {
+              "label": "Designed for repeated disassembly/reuse",
+              "score": 100
+            },
+            {
+              "label": "Standard replaceable seal",
+              "score": 80
+            },
+            {
+              "label": "Replaceable but proprietary/specialist",
+              "score": 60
+            },
+            {
+              "label": "Bonded/sealant interface requiring cleaning/reapplication",
+              "score": 30
+            },
+            {
+              "label": "Destructive/non-replaceable sealing",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "cool_inspect",
+          "c": "I",
+          "l": "Independent inspection condition",
+          "t": "select",
+          "h": "Choose the existing condition.",
+          "o": [
+            {
+              "label": "Inspectable/testable without motor disassembly",
+              "score": 100
+            },
+            {
+              "label": "One minor cover/component removed",
+              "score": 80
+            },
+            {
+              "label": "2–3 components removed",
+              "score": 60
+            },
+            {
+              "label": "Major module dismantling required",
+              "score": 30
+            },
+            {
+              "label": "Cooling jacket cannot be inspected independently",
+              "score": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "robotic",
+      "name": "Robotic Disassembly",
+      "weight": 0.15,
+      "evidence": "[17][18][20][36][39][40]",
+      "formula": "RDS = 0.30A + 0.25G + 0.25S + 0.20V",
+      "qs": [
+        {
+          "k": "rob_acc",
+          "c": "A",
+          "l": "Robot-accessible operations",
+          "t": "number",
+          "h": "Operations reachable by the intended robot/tool."
+        },
+        {
+          "k": "rob_tot",
+          "c": "A",
+          "l": "Total operations in robotic assessment",
+          "t": "number",
+          "h": "Assessment denominator."
+        },
+        {
+          "k": "grasp_n",
+          "c": "G",
+          "l": "Components with feasible grasp",
+          "t": "number",
+          "h": "Handled components with feasible grasp."
+        },
+        {
+          "k": "grasp_tot",
+          "c": "G",
+          "l": "Components requiring handling",
+          "t": "number",
+          "h": "Assessment denominator."
+        },
+        {
+          "k": "sequence",
+          "c": "S",
+          "l": "Sequence simplicity",
+          "t": "select",
+          "h": "Choose the existing condition.",
+          "o": [
+            {
+              "label": "Simple sequence, one tool/orientation",
+              "score": 100
+            },
+            {
+              "label": "1 tool change or reorientation",
+              "score": 80
+            },
+            {
+              "label": "2 changes/reorientations",
+              "score": 60
+            },
+            {
+              "label": "3–4 changes/reorientations",
+              "score": 40
+            },
+            {
+              "label": "Highly complex/manual intervention required",
+              "score": "range"
+            }
+          ]
+        },
+        {
+          "k": "seq_judgement",
+          "c": "S",
+          "l": "Judgement within 0–20 band",
+          "t": "number",
+          "max": 20,
+          "h": "Only used if the highly-complex condition is selected."
+        },
+        {
+          "k": "visible",
+          "c": "V",
+          "l": "Visible/detectable targets",
+          "t": "number",
+          "h": "Targets visible/detectable to the intended sensing approach."
+        },
+        {
+          "k": "detect_tot",
+          "c": "V",
+          "l": "Targets requiring detection",
+          "t": "number",
+          "h": "Assessment denominator."
+        }
+      ]
+    },
+    {
+      "id": "material",
+      "name": "Material Separation",
+      "weight": 0.1,
+      "evidence": "[22][28][31][32][34][35][37]",
+      "formula": "MSS = 0.40S + 0.35J + 0.25I",
+      "qs": [
+        {
+          "k": "sep_mass",
+          "c": "S",
+          "l": "Separable target material mass",
+          "t": "number",
+          "step": "0.01",
+          "h": "Use the same unit as the total target material mass."
+        },
+        {
+          "k": "target_mass",
+          "c": "S",
+          "l": "Total target material mass",
+          "t": "number",
+          "step": "0.01",
+          "h": "Assessment denominator."
+        },
+        {
+          "k": "mat_joint",
+          "c": "J",
+          "l": "Joint reversibility condition",
+          "t": "select",
+          "h": "Choose the relevant joint condition.",
+          "o": [
+            {
+              "label": "Easily reversible mechanical joint",
+              "score": 100
+            },
+            {
+              "label": "Reversible with additional process/tool",
+              "score": 75
+            },
+            {
+              "label": "Difficult separation",
+              "score": 50
+            },
+            {
+              "label": "Destructive separation required",
+              "score": 25
+            },
+            {
+              "label": "Inseparable",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "id_mass",
+          "c": "I",
+          "l": "Material mass with sufficient identification",
+          "t": "number",
+          "step": "0.01",
+          "h": "Mass with enough information for the intended recovery route."
+        },
+        {
+          "k": "id_tot_mass",
+          "c": "I",
+          "l": "Total material mass requiring identification",
+          "t": "number",
+          "step": "0.01",
+          "h": "Assessment denominator."
+        }
+      ]
+    },
+    {
+      "id": "inspection",
+      "name": "Inspection",
+      "weight": 0.05,
+      "evidence": "[35][41]",
+      "formula": "IS = 0.40A + 0.35D + 0.25T",
+      "qs": [
+        {
+          "k": "insp_acc",
+          "c": "A",
+          "l": "Critical components accessible for inspection",
+          "t": "number",
+          "h": "Accessible before major/destructive disassembly."
+        },
+        {
+          "k": "insp_tot",
+          "c": "A",
+          "l": "Total critical components assessed",
+          "t": "number",
+          "h": "Assessment denominator."
+        },
+        {
+          "k": "insp_dis",
+          "c": "D",
+          "l": "Disassembly requirement for inspection",
+          "t": "select",
+          "h": "Choose the existing condition.",
+          "o": [
+            {
+              "label": "No disassembly required",
+              "score": 100
+            },
+            {
+              "label": "1 minor component removed",
+              "score": 80
+            },
+            {
+              "label": "2–3 components removed",
+              "score": 60
+            },
+            {
+              "label": "Major module removal required",
+              "score": 30
+            },
+            {
+              "label": "Destructive access required",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "k": "insp_prov",
+          "c": "T",
+          "l": "Testing / inspection provision",
+          "t": "select",
+          "h": "Choose the existing condition.",
+          "o": [
+            {
+              "label": "Dedicated inspection/test features",
+              "score": 100
+            },
+            {
+              "label": "Good access with standard equipment",
+              "score": 80
+            },
+            {
+              "label": "Inspection possible but limited",
+              "score": 60
+            },
+            {
+              "label": "Specialist process needed",
+              "score": 30
+            },
+            {
+              "label": "No feasible inspection method",
+              "score": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trace",
+      "name": "Traceability",
+      "weight": 0.03,
+      "evidence": "[31][34][35][39][40]",
+      "formula": "TS = 0.55I + 0.45M",
+      "qs": [
+        {
+          "k": "comp_id",
+          "c": "I",
+          "l": "Identifiable critical/high-value components",
+          "t": "number",
+          "h": "Number with usable identification."
+        },
+        {
+          "k": "comp_tot",
+          "c": "I",
+          "l": "Components requiring identification",
+          "t": "number",
+          "h": "Assessment denominator."
+        },
+        {
+          "k": "mat_id",
+          "c": "M",
+          "l": "Material mass with usable identification/data",
+          "t": "number",
+          "step": "0.01",
+          "h": "Mass with usable material information."
+        },
+        {
+          "k": "mat_tot",
+          "c": "M",
+          "l": "Total product/target material mass",
+          "t": "number",
+          "step": "0.01",
+          "h": "Assessment denominator."
+        }
+      ]
+    }
+  ]
+}

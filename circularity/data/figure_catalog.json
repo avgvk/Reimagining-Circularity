@@ -1,0 +1,547 @@
+[
+  {
+    "id": "fig2",
+    "row": 2,
+    "paper": "Li et al. (2024)",
+    "figure": "Figure 1(a-b), page 3",
+    "design": "Traction motor types and disassembled Jaguar I-Pace PMSM",
+    "why": "Provides a visual overview of motor architecture and component access.",
+    "priority": "High",
+    "ref": "[22]",
+    "tags": [
+      "rotor",
+      "material"
+    ],
+    "file": "fig2.png"
+  },
+  {
+    "id": "fig3",
+    "row": 3,
+    "paper": "Tiwari et al. (2021)",
+    "figure": "Figure 1, pages 5-6",
+    "design": "Motor components and disassembly sequence",
+    "why": "Useful for explaining general disassemblability, but it is a 3-kW brake motor rather than an EV traction motor.",
+    "priority": "Medium",
+    "ref": "[23]",
+    "tags": [
+      "modular",
+      "material",
+      "trace"
+    ],
+    "file": "fig3.png"
+  },
+  {
+    "id": "fig4",
+    "row": 4,
+    "paper": "Katona and Orosz (2024)",
+    "figure": "Figure 7, around page 11",
+    "design": "SPMSM, SynRM and PM-assisted SynRM topologies",
+    "why": "Useful for distinguishing motor and rotor topology visually.",
+    "priority": "Medium",
+    "ref": "[24]",
+    "tags": [
+      "rotor",
+      "material"
+    ],
+    "file": "fig4.png"
+  },
+  {
+    "id": "fig5",
+    "row": 5,
+    "paper": "Maani et al. (2024)",
+    "figure": "Figure 2 / transmission cross-section",
+    "design": "Ford Fusion HF35 transmission and motor access",
+    "why": "Shows why magnet recovery begins with access through a larger transmission assembly.",
+    "priority": "High",
+    "ref": "[16]",
+    "tags": [
+      "modular",
+      "access",
+      "fastener"
+    ],
+    "file": "fig5.png"
+  },
+  {
+    "id": "fig6",
+    "row": 6,
+    "paper": "Pulikottil et al. (2025)",
+    "figure": "Figure 1, page 2",
+    "design": "Toyota and Mazda motors, rotors and IPM arrangements",
+    "why": "Directly shows two EV motor architectures and buried magnet configurations.",
+    "priority": "High",
+    "ref": "[17]",
+    "tags": [
+      "rotor",
+      "access"
+    ],
+    "file": "fig6.png"
+  },
+  {
+    "id": "fig7",
+    "row": 7,
+    "paper": "Pulikottil et al. (2025)",
+    "figure": "Figure 5, page 5",
+    "design": "Connectors and precision-fit features",
+    "why": "Shows concrete design features that obstruct disassembly.",
+    "priority": "High",
+    "ref": "[17]",
+    "tags": [
+      "fastener",
+      "access",
+      "robotic"
+    ],
+    "file": "fig7.png"
+  },
+  {
+    "id": "fig8",
+    "row": 8,
+    "paper": "Liang and Pham (2025)",
+    "figure": "Figure 1",
+    "design": "Rotor-stator contact and offset conditions",
+    "why": "Useful schematic for explaining why rotor-stator separability is a distinct evaluation stage.",
+    "priority": "Medium",
+    "ref": "[18]",
+    "tags": [
+      "access",
+      "rotor",
+      "robotic"
+    ],
+    "file": "fig8.png"
+  },
+  {
+    "id": "fig9",
+    "row": 9,
+    "paper": "Heim et al. (2023)",
+    "figure": "Figure 1, page 3",
+    "design": "PMSM rotor anatomy with buried magnets, shaft, bearings, balancing disc and stack segments",
+    "why": "One of the clearest visuals for rotor-level design variables in the knowledge base.",
+    "priority": "High",
+    "ref": "[19]",
+    "tags": [
+      "rotor"
+    ],
+    "file": "fig9.png"
+  },
+  {
+    "id": "fig10",
+    "row": 10,
+    "paper": "Heim et al. (2024)",
+    "figure": "Rotor topology / magnet-pocket figure",
+    "design": "Buried magnet and lamination-stack geometry",
+    "why": "Useful for explaining geometric variability and magnet-pocket access.",
+    "priority": "High",
+    "ref": "[20]",
+    "tags": [
+      "rotor"
+    ],
+    "file": "fig10.png"
+  },
+  {
+    "id": "fig11",
+    "row": 11,
+    "paper": "Veller et al. (2025)",
+    "figure": "Figure 3",
+    "design": "Surface-mounted and buried PM rotor topologies",
+    "why": "Direct visual comparison of the main magnet-accessibility distinction.",
+    "priority": "High",
+    "ref": "[21]",
+    "tags": [
+      "rotor"
+    ],
+    "file": "fig11.png"
+  },
+  {
+    "id": "fig12",
+    "row": 12,
+    "paper": "Veller et al. (2025)",
+    "figure": "Figure 4",
+    "design": "Adhesive-based rotor/magnet assembly",
+    "why": "Shows how a manufacturing joint becomes an end-of-life separation barrier.",
+    "priority": "High",
+    "ref": "[21]",
+    "tags": [
+      "rotor"
+    ],
+    "file": "fig12.png"
+  },
+  {
+    "id": "fig13",
+    "row": 13,
+    "paper": "Veller et al. (2025)",
+    "figure": "Figure 12",
+    "design": "Surface and buried magnet laboratory component configurations",
+    "why": "Clearly shows bonded area, embedment and the geometry used to generate evidence.",
+    "priority": "High",
+    "ref": "[21]",
+    "tags": [
+      "rotor"
+    ],
+    "file": "fig13.png"
+  },
+  {
+    "id": "fig14",
+    "row": 14,
+    "paper": "Mohammadi Ajamloo et al. (2026)",
+    "figure": "Figure 1, page 2",
+    "design": "Exploded/interior view, end cap and assembled proposed IPM rotor",
+    "why": "Very clear visual of modular rotor construction, magnet location, bolts and end-cap retention.",
+    "priority": "High",
+    "ref": "[25]",
+    "tags": [
+      "rotor",
+      "modular",
+      "redesign"
+    ],
+    "file": "fig14.png"
+  },
+  {
+    "id": "fig15",
+    "row": 15,
+    "paper": "Mohammadi Ajamloo et al. (2026)",
+    "figure": "Figure 2, page 2",
+    "design": "Cross-section comparing conventional IPM rotor and proposed rib-less modular rotor",
+    "why": "Direct visual comparison of iron ribs, magnet enclosure and the rib-less design concept.",
+    "priority": "High",
+    "ref": "[25]",
+    "tags": [
+      "rotor",
+      "modular",
+      "redesign"
+    ],
+    "file": "fig15.png"
+  },
+  {
+    "id": "fig16",
+    "row": 16,
+    "paper": "Mohammadi Ajamloo et al. (2026)",
+    "figure": "Figure 10, page 4",
+    "design": "Prototype rotor components before assembly and assembled machine",
+    "why": "Shows that the modular rotor exists physically and exposes the separable rotor modules and caps.",
+    "priority": "High",
+    "ref": "[25]",
+    "tags": [
+      "rotor",
+      "modular",
+      "redesign"
+    ],
+    "file": "fig16.png"
+  },
+  {
+    "id": "fig17",
+    "row": 17,
+    "paper": "Li et al. (2019)",
+    "figure": "Figure 4, page 4",
+    "design": "Progression from one shaped magnet to standardised reusable magnet segments",
+    "why": "Useful visual for geometry standardisation and cross-generation reuse compatibility.",
+    "priority": "High",
+    "ref": "[26]",
+    "tags": [
+      "rotor",
+      "material",
+      "redesign"
+    ],
+    "file": "fig17.png"
+  },
+  {
+    "id": "fig18",
+    "row": 18,
+    "paper": "Li et al. (2019)",
+    "figure": "Figure 7, page 6",
+    "design": "Four motor/rotor concepts for different magnet reuse strategies",
+    "why": "Useful for showing how magnet integration changes across rotor architectures.",
+    "priority": "Medium",
+    "ref": "[26]",
+    "tags": [
+      "rotor",
+      "material",
+      "redesign"
+    ],
+    "file": "fig18.png"
+  },
+  {
+    "id": "fig19",
+    "row": 19,
+    "paper": "Torta et al. (2024)",
+    "figure": "Figure 6, page 11",
+    "design": "Real EV component rotors with steel cover plates and visible magnets after cover removal",
+    "why": "One of the strongest real-product images showing a physical design barrier to magnet access.",
+    "priority": "High",
+    "ref": "[28]",
+    "tags": [
+      "rotor",
+      "material",
+      "redesign"
+    ],
+    "file": "fig19.png"
+  },
+  {
+    "id": "fig20",
+    "row": 20,
+    "paper": "Hahn et al. (2026)",
+    "figure": "Figure 2, page 2",
+    "design": "Comparison of caulking, press-fit, spring, adhesive and injection-moulded magnet fixation approaches",
+    "why": "Excellent design reference for the fixation-method variable without focusing on recovery equipment.",
+    "priority": "High",
+    "ref": "[29]",
+    "tags": [
+      "rotor",
+      "redesign"
+    ],
+    "file": "fig20.png"
+  },
+  {
+    "id": "fig21",
+    "row": 21,
+    "paper": "Hahn et al. (2026)",
+    "figure": "Figure 7, page 5",
+    "design": "IPM rotor cross-section and flux-barrier cavity proposed for reversible interlayer fixation",
+    "why": "Shows where a fixation/release feature could be integrated into an IPM rotor.",
+    "priority": "Medium",
+    "ref": "[29]",
+    "tags": [
+      "rotor",
+      "redesign"
+    ],
+    "file": "fig21.png"
+  },
+  {
+    "id": "fig22",
+    "row": 22,
+    "paper": "Högberg et al. (2017)",
+    "figure": "Figure 1, page 1",
+    "design": "Solid bread-loaf magnet pole versus segmented standard-sized magnet concept",
+    "why": "Useful visual for explaining magnet geometry standardisation and reuse compatibility.",
+    "priority": "Medium",
+    "ref": "[30]",
+    "tags": [
+      "inspection",
+      "rotor",
+      "material"
+    ],
+    "file": "fig22.png"
+  },
+  {
+    "id": "fig23",
+    "row": 23,
+    "paper": "Upadhayay et al. (2018)",
+    "figure": "Figure 1, page 2",
+    "design": "Claw-pole rotor and the magnet slit that terminates at the inter-claw",
+    "why": "Directly shows the geometry that obstructs the magnet's exit path.",
+    "priority": "High",
+    "ref": "[32]",
+    "tags": [
+      "rotor",
+      "access",
+      "redesign"
+    ],
+    "file": "fig23.png"
+  },
+  {
+    "id": "fig24",
+    "row": 24,
+    "paper": "Jha et al. (2018)",
+    "figure": "Figure 3, page 5",
+    "design": "Commercial hub motor, motor without end-shields, stator and rotor",
+    "why": "Useful real-motor assembly view for general disassemblability and component hierarchy.",
+    "priority": "High",
+    "ref": "[33]",
+    "tags": [
+      "modular",
+      "rotor"
+    ],
+    "file": "fig24.png"
+  },
+  {
+    "id": "fig25",
+    "row": 25,
+    "paper": "Jha et al. (2018)",
+    "figure": "Figure 5, page 6",
+    "design": "Four DEMETER motor concepts: outer-rotor, 3D-flux hybrid, claw-pole and radial IPM",
+    "why": "Useful design comparison showing how motor architecture and magnet integration vary across concepts.",
+    "priority": "High",
+    "ref": "[33]",
+    "tags": [
+      "modular",
+      "rotor",
+      "redesign"
+    ],
+    "file": "fig25.png"
+  },
+  {
+    "id": "fig26",
+    "row": 26,
+    "paper": "Di Gerlando et al. (2024)",
+    "figure": "Figure 1, PDF page 5 / journal p. 319",
+    "design": "Exploded permanent-magnet synchronous motor showing rotor, stator, housing, bearings, resolver and end plates",
+    "why": "A clear automotive-relevant motor assembly view for explaining general component hierarchy and separability.",
+    "priority": "High",
+    "ref": "[35]",
+    "tags": [
+      "modular",
+      "access",
+      "bearing",
+      "cooling"
+    ],
+    "file": "fig26.png"
+  },
+  {
+    "id": "fig27",
+    "row": 27,
+    "paper": "Hamidi et al. (2026)",
+    "figure": "Figure 2, page 5",
+    "design": "Selective Tesla Model Y EDU disassembly map down to the rotor core",
+    "why": "Shows the actual dependency chain between phase terminals, resolver, motor module and rotor access.",
+    "priority": "High",
+    "ref": "[36]",
+    "tags": [
+      "modular",
+      "access",
+      "robotic",
+      "rotor"
+    ],
+    "file": "fig27.png"
+  },
+  {
+    "id": "fig28",
+    "row": 28,
+    "paper": "Hamidi et al. (2026)",
+    "figure": "Figure 3, page 6",
+    "design": "Disassembled Tesla Model Y EDU with inverter, transmission, heat exchanger, stator and rotor core",
+    "why": "Strong real-product image showing the major separable subsystems and their relative integration.",
+    "priority": "High",
+    "ref": "[36]",
+    "tags": [
+      "modular",
+      "access",
+      "bearing",
+      "cooling",
+      "rotor"
+    ],
+    "file": "fig28.png"
+  },
+  {
+    "id": "fig29",
+    "row": 29,
+    "paper": "Ihne et al. (2025)",
+    "figure": "Figure 2, page 2",
+    "design": "Typical fully integrated electric axle drive with motor, gearbox, inverter, bearing shields and rotor/stator components",
+    "why": "Useful design reference for integration degree and main subsystem boundaries in an automotive traction unit.",
+    "priority": "High",
+    "ref": "[37]",
+    "tags": [
+      "modular",
+      "cooling",
+      "access"
+    ],
+    "file": "fig29.png"
+  },
+  {
+    "id": "fig30",
+    "row": 30,
+    "paper": "Ihne et al. (2025)",
+    "figure": "Figure 7, page 4",
+    "design": "Schematic dismantling hierarchy from integrated drive unit to motor, rotor, stator, shaft, windings and magnets",
+    "why": "Useful visual for distinguishing general disassembly levels from the later magnet-recovery stage.",
+    "priority": "High",
+    "ref": "[37]",
+    "tags": [
+      "modular",
+      "material"
+    ],
+    "file": "fig30.png"
+  },
+  {
+    "id": "fig31",
+    "row": 31,
+    "paper": "Hahn et al. (2024)",
+    "figure": "Figure 3, page 4",
+    "design": "Exploded electric traction-drive unit with rotor, stator, transmission, power electronics, housing and end plate",
+    "why": "Clear architecture image for general disassemblability and subsystem integration.",
+    "priority": "High",
+    "ref": "[38]",
+    "tags": [
+      "modular",
+      "material",
+      "rotor"
+    ],
+    "file": "fig31.png"
+  },
+  {
+    "id": "fig32",
+    "row": 32,
+    "paper": "Hahn et al. (2024)",
+    "figure": "Figure 4, page 4",
+    "design": "Magnet mounting techniques and different internal magnet arrangements",
+    "why": "Useful design reference for separating magnet topology from fixation method.",
+    "priority": "High",
+    "ref": "[38]",
+    "tags": [
+      "rotor",
+      "redesign"
+    ],
+    "file": "fig32.png"
+  },
+  {
+    "id": "fig33",
+    "row": 33,
+    "paper": "Hahn et al. (2024)",
+    "figure": "Figure 7, page 6",
+    "design": "Photographic sequence from outer traction-drive housing through gearbox removal to rotor extraction",
+    "why": "Strong real-assembly visual showing hidden fasteners, preceding components and rotor-access dependency.",
+    "priority": "High",
+    "ref": "[38]",
+    "tags": [
+      "fastener",
+      "access",
+      "rotor",
+      "trace"
+    ],
+    "file": "fig33.png"
+  },
+  {
+    "id": "fig34",
+    "row": 34,
+    "paper": "Schmidt et al. (2025, Circularity Days 2024)",
+    "figure": "Figure 3, chapter p. 91",
+    "design": "Disassembly demonstrator with a close-up of the Volkswagen rotor and unscrewing tool",
+    "why": "The rotor close-up is useful for showing the real axial screw-retention architecture, although the overall figure is partly automation-focused.",
+    "priority": "Medium",
+    "ref": "[39]",
+    "tags": [
+      "fastener",
+      "robotic",
+      "access"
+    ],
+    "file": "fig34.png"
+  },
+  {
+    "id": "fig35",
+    "row": 35,
+    "paper": "Hansjosten and Fleischer (2024, WGP 2023)",
+    "figure": "Figure 1, chapter p. 451",
+    "design": "Manually disassembled Volkswagen ID.3 and e.go traction motors",
+    "why": "Strong real-product visual showing two automotive traction-motor assemblies that were physically analysed for joining methods.",
+    "priority": "High",
+    "ref": "[40]",
+    "tags": [
+      "access",
+      "robotic"
+    ],
+    "file": "fig35.png"
+  },
+  {
+    "id": "fig36",
+    "row": 36,
+    "paper": "Hansjosten and Fleischer (2024, WGP 2023)",
+    "figure": "Figure 2, chapter p. 453",
+    "design": "Simplified motor parts plus graph representation and a real 25-part motor model",
+    "why": "Useful for explaining how a motor design can be represented as parts and connections for model-based disassembly evaluation.",
+    "priority": "Medium",
+    "ref": "[40]",
+    "tags": [
+      "access",
+      "robotic"
+    ],
+    "file": "fig36.png"
+  }
+]

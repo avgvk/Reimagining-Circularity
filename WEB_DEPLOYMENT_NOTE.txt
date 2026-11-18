@@ -1,0 +1,11 @@
+D2N_v2 web-upload package
+
+This package is intentionally smaller than the full archival prototype.
+It excludes two large reference-only files:
+- circularity_evaluator.html
+- reference/EV_motor_design_recoverability_focused_evidence_v5(1).xlsx
+
+The native v3 evidence layer already contains the extracted Evidence Register,
+Crosswalk, criteria, critical rules, references, redesign guidance and 35 figures.
+The excluded files remain preserved in the full prototype archive and are not
+required to run or test the merged Streamlit interface.
