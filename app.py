@@ -27,7 +27,7 @@ def _server_setting(name, default=None):
 
 
 st.set_page_config(page_title="EV Motor Disassembly Intelligence",page_icon="⚙️",layout="wide")
-st.title("EV Motor Disassembly Intelligence Platform")
+st.title("Reimagining Circularity Intelligence Platform - EV Motor Case Study ")
 st.caption("STEP → visualization → component identification → assembly features → relationship matrix → sequence → circularity assessment → results & diagnosis → robotic assessment → improvement suggestions → export/audit")
 
 STATE={"project":None,"groups":None,"bodies":None,"features":None,"relationships":None,"sequence":None,"assessment":None,"suggestions":None,"circularity_evaluation":None}
@@ -47,7 +47,7 @@ with st.sidebar:
         st.success("LLM key configured on the server")
     else:
         st.info("LLM key not configured. Add OPENAI_API_KEY to .streamlit/secrets.toml or the server environment.")
-    st.caption(f"Model: {model_name}. The API key is never displayed or entered through the browser UI.")
+    st.caption(f"Model: {model_name}.")
     st.caption("Every LLM result is stored beside the geometry result; user corrections remain the final authority.")
 
 if process and uploaded:
