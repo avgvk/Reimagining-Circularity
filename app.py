@@ -27,7 +27,7 @@ def _server_setting(name, default=None):
 
 
 st.set_page_config(page_title="EV Motor Disassembly Intelligence",page_icon="⚙️",layout="wide")
-st.title("Reimagining Circularity Intelligence Platform - EV Motor Case Study ")
+st.title("Design for Automated Disassembly Assessment Platform")
 st.caption("STEP → visualization → component identification → assembly features → relationship matrix → sequence → circularity assessment → results & diagnosis → robotic assessment → improvement suggestions → export/audit")
 
 STATE={"project":None,"groups":None,"bodies":None,"features":None,"relationships":None,"sequence":None,"assessment":None,"suggestions":None,"circularity_evaluation":None}
